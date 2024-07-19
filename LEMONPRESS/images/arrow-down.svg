@@ -1,0 +1,18 @@
+  <svg
+      class="ms-2"
+      xmlns="http://www.w3.org/2000/svg"
+      width="10.422"
+      height="6.2"
+      viewBox="0 0 10.422 6.2"
+    >
+      <path
+        id="Vector"
+        d="M0,0,3.8,3.786,7.594,0"
+        transform="translate(1.414 1.414)"
+        fill="none"
+        stroke="#525252"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"  
+      ></path>
+    </svg>

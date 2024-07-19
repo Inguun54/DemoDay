@@ -1,0 +1,1017 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.PRESS {
+  background-color: whitesmoke;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 12px solid;
+  border-radius: 20px;
+  display: flex;
+}
+
+.lime {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.lime:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.Brey {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Brey:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.Just {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Just:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.Down {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Down:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.Up {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Up:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.Tse2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 250px;
+  top: 20px;
+  font-size: 18px;
+  color: blue;
+}
+.Tse2:hover {
+  cursor: pointer;
+}
+.Harbor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+  right: 80px;
+  top: 16px;
+}
+
+.Harbor:hover {
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+  border: 0px;
+}
+
+.Zurag {
+  width: 30vw;
+  display: flex;
+  height: 480px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/e2bf93fa-56ec-4a7b-849d-23329f654d2b);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 20px;
+  margin-top: 9vh;
+  margin-left: 18vh;
+}
+
+.Zurag:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.overlay {
+  width: 116%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.Zurag-2 {
+  width: 440px;
+  display: flex;
+  height: 280px;
+  position: relative;
+  top: 15px;
+  background-image: url(https://dash-api.yld.mn/api/image/e651e1aa-379a-44e2-a08e-9815ed22a521);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  margin-right: 12vh;
+}
+
+.Overlay-2 {
+  width: 120%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.Zurag-2:hover .Overlay-2 {
+  opacity: 0.5s;
+  cursor: pointer;
+}
+
+.womanSection {
+  background-image: url(https://dash-api.yld.mn/api/image/401099fb-3b08-436d-8317-748b4332add4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 330px;
+  height: 380px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  margin-top: 0px;
+  position: relative;
+  font-size: 20px;
+  left: 50px;
+  bottom: 10px;
+}
+
+.womanSection:hover {
+  cursor: pointer;
+}
+
+.Miguel {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.Black-box {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin-left: 100px;
+  padding-right: 100px;
+  background-color: white;
+  position: relative;
+  right: -55px;
+  height: 400px;
+}
+
+.Black-box:hover {
+  cursor: pointer;
+}
+
+.Alex {
+  display: flex;
+  color: blue;
+  padding-right: 480px;
+}
+
+.Alex:hover {
+  cursor: pointer;
+}
+
+.Fish {
+  display: flex;
+  color: blue;
+}
+
+.Fish:hover {
+  cursor: pointer;
+}
+
+.sheep {
+  display: flex;
+  color: blue;
+  padding-right: 480px;
+}
+
+.sheep:hover {
+  cursor: pointer;
+}
+
+.Money {
+  display: flex;
+  position: absolute;
+  top: 640px;
+  font-size: 25px;
+  left: 500px;
+  width: 650px;
+}
+
+.Money-2 {
+  display: flex;
+  position: absolute;
+  top: 430px;
+  font-size: 20px;
+  right: 500px;
+  width: 390px;
+  cursor: pointer;
+}
+
+.Money-3 {
+  display: flex;
+  position: absolute;
+  top: 540px;
+  font-size: 20px;
+  right: 500px;
+  width: 390px;
+  cursor: pointer;
+}
+
+.Money-4 {
+  display: flex;
+  position: absolute;
+  top: 620px;
+  font-size: 20px;
+  right: 500px;
+  width: 390px;
+  cursor: pointer;
+}
+
+.Words {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  margin-left: 150px;
+}
+
+.Manual {
+  display: flex;
+  position: absolute;
+  top: 410px;
+  gap: 12px;
+}
+
+.Afk {
+  display: flex;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.xela {
+  display: flex;
+  color: blue;
+}
+
+.xela:hover {
+  cursor: pointer;
+}
+
+.ling {
+  color: blue;
+}
+
+.ling:hover {
+  cursor: pointer;
+}
+
+.cow {
+  color: blue;
+}
+
+.cow:hover {
+  cursor: pointer;
+}
+
+.Gif {
+  font-size: 25px;
+  width: 650px;
+  display: flex;
+  position: relative;
+  bottom: 20px;
+}
+
+.Zah-zeel {
+  display: flex;
+  position: relative;
+  bottom: 65px;
+  right: 630px;
+  color: #0040d4;
+}
+
+.Zah-zeel:hover {
+  cursor: pointer;
+}
+
+.blue-border {
+  width: 1340px;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 24px;
+  background-image: url(https://lemonpress.mn/assets/subscribe-cover.png);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.Business {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  word-break: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding-bottom: 26px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 26px;
+}
+.minuten {
+  color: #0040d4;
+}
+.minuten:hover {
+  cursor: wait;
+}
+
+.White-background {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 180px;
+  border-radius: 10px;
+  padding-left: 100%;
+  padding-top: 180px;
+}
+
+.Button {
+  border: 1px solid #0040d4;
+  background-color: #0040d4;
+  color: white;
+}
+.Button:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.Newsteller {
+  color: grey;
+}
+
+.Student {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/122d870e-1a9a-4bfe-b356-63e24c4fd3c4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  margin-top: 50px;
+}
+
+.Teacher {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/9bd574cd-ed90-4c77-877d-d8a8c2cdbe49);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  margin-top: 50px;
+}
+
+.Creator {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/acee6f4e-b063-4999-b6cc-0eae65a1b827);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  margin-top: 50px;
+}
+
+.Creator1 {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/0b60b627-a000-4a80-9ac2-c6c80af2af98);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  margin-top: 50px;
+}
+
+.Creator2 {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/846bc9f4-c89b-4eab-866c-24f2b83a0c49);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0px;
+  margin-top: 50px;
+}
+
+.Creator3 {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/2584063b-9015-4609-b191-1de3cab4673f);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0px;
+  margin-top: 50px;
+}
+
+.Creator4 {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://dash-api.yld.mn/api/image/93695117-e5f5-44a4-a502-67d386028bc4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0px;
+  margin-top: 50px;
+}
+
+.Hoiguur {
+  display: flex;
+  font-size: 19px;
+  font-weight: 700px;
+  padding-top: 40px;
+}
+.HRRRR {
+  border: 6px solid;
+}
+
+.HR2 {
+  border: 3px solid;
+}
+
+.Dam {
+  position: relative;
+  right: 369px;
+  bottom: 37px;
+  color: #0040d4;
+  font-size: 13px;
+}
+
+.realTeacher {
+  width: 370px;
+  height: 200px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0px;
+}
+
+.Greet {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+
+.zahzeel {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 440px;
+  font-size: 13px;
+  color: #0040d4;
+}
+
+.Meet {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+
+.Convince {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+.osk {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+.Team {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+.Drake {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+
+.Kendrick {
+  font-size: 19px;
+  display: flex;
+  position: relative;
+  left: 364px;
+  bottom: 150px;
+}
+
+.Dart {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 190px;
+  font-size: 13px;
+  color: #0040d4;
+}
+.Dumb {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 335px;
+  font-size: 13px;
+  color: #0040d4;
+}
+.Cereal {
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  right: 440px;
+  font-size: 13px;
+  color: #0040d4;
+  width: 200px;
+}
+.Drunk {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 375px;
+  font-size: 13px;
+  color: #0040d4;
+}
+.Hit {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 540px;
+  font-size: 13px;
+  color: #0040d4;
+}
+.Mad {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  right: 410px;
+  font-size: 13px;
+  color: #0040d4;
+}
+
+.Dot {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  right: 463.2px;
+  top: 30px;
+  color: grey;
+}
+
+.Arrow {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  right: 285px;
+  bottom: -30px;
+  color: grey;
+}
+
+.I-WILL {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 30px;
+  right: 505px;
+  color: grey;
+}
+
+.lemonpress-itself {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 30px;
+  right: 467px;
+  color: grey;
+}
+
+.OUSK {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  top: 55px;
+  right: 623px;
+  color: grey;
+}
+
+.Dunk {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  right: 469px;
+  bottom: -30px;
+  color: grey;
+}
+
+.Sky {
+  font-size: 13px;
+  display: flex;
+  position: relative;
+  right: 595px;
+  bottom: -30px;
+  color: grey;
+}
+
+.Travel {
+  width: 380px;
+  margin-top: 20px;
+}
+
+.Column {
+  display: flex;
+  flex-direction: row;
+}
+
+.Her {
+  display: flex;
+  flex-direction: column;
+  width: 778px;
+  margin-top: 30px;
+  margin-right: 180px;
+}
+
+.oohaImg {
+  background-image: url(https://dash-api.yld.mn/api/image/b5781d4a-1da1-4f15-a41b-a3fed0ee9d9a);
+  width: 100%;
+  height: 300px;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+}
+
+.Biznes {
+  font-size: 28px;
+  width: 0;
+  margin-left: 380px;
+  position: relative;
+  left: 30px;
+  display: flex;
+}
+
+.Much {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Bank {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-left: 30px;
+}
+.Less {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Adidas {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.Mid {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Nike {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.container {
+  display: flex;
+  margin-right: 380px;
+  margin-top: 30px;
+}
+
+.Some {
+  font-size: 28px;
+  width: 300px;
+  margin-left: 380px;
+  position: relative;
+  left: 331px;
+  display: flex;
+}
+
+.Storage {
+  display: flex;
+  margin-right: 680px;
+  margin-top: 70px;
+}
+.Triple {
+  color: blue;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.No-Bank {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-left: 30px;
+}
+.Single {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Nimble {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.Double {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Keen {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Storage2 {
+  display: flex;
+  margin-right: 680px;
+  margin-top: 70px;
+}
+
+.Medee {
+  font-size: 28px;
+  width: 300px;
+  margin-left: 380px;
+  position: relative;
+  left: 331px;
+  display: flex;
+}
+.Double {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Addiction {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-left: 30px;
+}
+.Double {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Obsession {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.Double {
+  color: blue;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.Addicted {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Storage3 {
+  display: flex;
+  margin-right: 680px;
+  margin-top: 70px;
+}
+
+.Autistic {
+  font-size: 28px;
+  width: 300px;
+  margin-left: 380px;
+  position: relative;
+  left: 331px;
+  display: flex;
+}
+
+.Autism {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-left: 30px;
+}
+.ADHD {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.HIV {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Storage4 {
+  display: flex;
+  margin-right: 680px;
+  margin-top: 70px;
+}
+
+.Olon-Ulas {
+  font-size: 28px;
+  width: 300px;
+  margin-left: 380px;
+  position: relative;
+  left: 331px;
+  display: flex;
+}
+.Half-time {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  height: 250px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+  padding-left: 30px;
+}
+.Full-time {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.Pre-Match {
+  display: flex;
+  width: 400px;
+  margin-top: 50px;
+  font-size: 24px;
+  gap: 10px;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.Footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 150px;
+  background-color: #0040d4;
+}
+.Foot-press {
+  border: whitesmoke 1px solid;
+  width: 100vw;
+  margin-top: 98px;
+  height: 300px;
+  background-color: #0040d4;
+}
+
+.Foot-Plate {
+  width: 100%;
+  height: 70px;
+  background-color: #0040d4;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: white;
+  color: green;
+  width: 58px;
+  height: 56px;
+  display: flex;
+}
