@@ -113,7 +113,13 @@
     <h4>Clue -</h4>
 
     <script>
-      const wordToGuess = "turs";
+      const categories = {
+        Animals: ["cat", "dog", "elephant"],
+        Colors: ["red", "blue", "green"],
+        Marvels: ["spiderman", "hulk", "ironman"],
+      };
+
+      const wordToGuess = "endgame";
       let Lives = 10;
       let nga = 0;
       const selectedContainer = document.getElementById("selected");
@@ -195,11 +201,14 @@
       }
       function gameStatus(nga) {
         if (nga == wordToGuess.length) {
-          alert("Luck");
+          alert("You won");
+          location.reload();
         } else if (Lives === 0) {
-          alert("You suck go delete yourself, bro", +wordToGuess);
+          alert("Gg maybe next time, the word was: " + wordToGuess);
+          location.reload();
         }
       }
+
       gameStatus();
       HardDisplay();
     </script>

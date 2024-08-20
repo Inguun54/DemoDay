@@ -9,40 +9,56 @@
     <input placeholder="Email" id="email" type="email"></input>
     <input placeholder="Phone" id="phoneNumber" ></input>
     <input placeholder="Pass"  id="password" type="password" minlength="8"></input>
-    <button id="Button">Submit</button>
-    <div class="asd">Welcome to Red Web</div>
+    <button id="Button">Continue</button>
+    <div class="asd">Log in or Sign in</div>
+    
 
     <style>
       body {
-        background-color: black;
+        background-color: rgb(29, 28, 28);
       }
       .asd {
-        border: 12px solid red;
+        border: 12px solid rgba(242, 15, 15, 0.897);
         width: 500px;
         height: 280px;
         border-radius: 12px;
+        margin-left: 1000px;
         display: flex;
         justify-content: center;
-        background-color: red;
+        background-color: rgba(248, 31, 31, 0.878);
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 25px;
       }
       #password {
         position: relative;
-        top:100px
+        top:120px;
+        width: fit-content;
+        left: 700px;
+        height: 25px;
       }
       #email {
         margin-left: 10px;
         position: relative;
-        top: 100px;
+        top: 120px;
+        left: 1350px;
+        height: 25px;
+        width: fit-content;
       }
       #phoneNumber{
         position: relative;
-        top: 100px;
+        top: 120px;
+        left: 1030px;
+        height: 25px;
+        width: fit-content;
       }
       #Button {
+        width: fit-content;
         position: relative;
-        top: 100px;
+        top: 200px;
+        height: 46px;
+        width: 150px;
+        border-radius: 7px;
+        left: 730px;
       }
     </style>
     <script>
@@ -52,31 +68,29 @@
       const phoneNumber = document.getElementById("phoneNumber");
       const Password = document.getElementById("password");
       const button = document.getElementById("Button");
-      // function validEmail() {
-      //   const emailIs = email.value;
-      //   if (emailIs.includes("@") === false) {
-      //     alert("on email @ has to include ");
-      //   }
-      // }
+      function validEmail() {
+        const emailIs = email.value;
+        if (emailIs.includes("@") === false) {
+          alert("on email @ has to include ");
+        }
+      }
 
-      // function validPhone(){
-      //   let phoneIs = phoneNumber.value;
+      function validPhone(){
+        let phoneIs = phoneNumber.value;
 
-      //   for(let i = 0; i < phoneIs.length; i++){
-      //       if(numbers.includes(phoneIs[i]) == false) {
-      //           return alert("Only number on (Phone)")
-      //       }
-      //   }
-      // }
+        for(let i = 0; i < phoneIs.length; i++){
+            if(numbers.includes(phoneIs[i]) == false) {
+                return alert("Only number on (Phone)")
+            }
+        }
+      }
 
 
       function validPassWord() {
-        let passwordIs = password.value;
+        let passwordIs = Password.value;
         for(let i = 0; i <passwordIs.length; i++) 
         if(passwordIs.length < 8) {
        return alert("must contain 8 character minimum")
-      } else if(Letters.includes(passwordIs[i]) == false){
-        return alert("The password must contain letters")
        }
       }
 
@@ -84,8 +98,12 @@
         validEmail();
        validPhone();
        validPassWord()
-            });
+
+      localStorage.setItem("email", email.value)
+      localStorage.setItem("phone", phoneNumber.value)
+      localStorage.setItem("password", Password.value)
       
+            });
     </script>
   </body>
 </html>
