@@ -44,26 +44,4 @@ button.addEventListener("click", function() {
     });
     clicked.appendChild(editButton);
     container.appendChild(clicked);
-    
-    const date = new Date();
-    console.log(date); 
-    const format = new Intl.DateTimeFormat("en-GB", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit"
-    })
-  
-    const Format = format.format(date);
-    console.log(Format);
-    
-    const contain = document.createComment("div");
-    contain.innerHTML = date;
-  
-    const contain2 =document.createElement("div");
-    contain2.innerHTML = Format;
-  
-    document.body.appendChild(contain);
-    document.body.appendChild(contain2);
   });
