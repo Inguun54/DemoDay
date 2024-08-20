@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Hangman Game</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: purple;
+        font-family: Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: whitesmoke;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      h4 {
+        font-size: 35px;
+        margin-top: 30px;
+      }
+
+      .Mail {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        line-height: 50px;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: grey;
+      }
+      .storage {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        line-height: 50px;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: grey;
+      }
+
+      #alphabets,
+      #selected,
+      #wordDisplay {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 800px;
+        margin: 10px 0;
+      }
+
+      #selected {
+        margin-top: 20px;
+      }
+      .line {
+        color: white;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HANGMAN</h1>
+
+    <h2>VANILLA JAVASCRIPT HANGMAN GAME</h2>
+
+    <h3>
+      Use the alphabet below to guess the word, or click hint to get a clue
+    </h3>
+
+    <div id="alphabets"></div>
+    <div id="selected"></div>
+    <div id="wordDisplay"></div>
+    <div id="letters"></div>
+    <h4>The Chosen Category is ???</h4>
+
+    <h4>You have <span id="lives">10</span> lives</h4>
+    <h4>Clue -</h4>
+
+    <script>
+      const wordToGuess = "turs";
+      let Lives = 10;
+      let nga = 0;
+      const selectedContainer = document.getElementById("selected");
+      const wordDisplay = document.getElementById("wordDisplay");
+      const livesDisplay = document.getElementById("lives");
+
+      const lettersContainer = document.getElementById("letters");
+      const exam = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+      ];
+
+      for (let i = 0; i < exam.length; i++) {
+        const letter = exam[i];
+        const letterButton = document.createElement("button");
+        letterButton.className = "storage";
+        letterButton.textContent = letter;
+
+        lettersContainer.appendChild(letterButton);
+        letterButton.addEventListener("click", function () {
+          let clickedButton = document.createElement("div");
+          gameStatus();
+          clickedButton.textContent = letter;
+          clickedButton.className = "Mail";
+          selectedContainer.appendChild(clickedButton);
+          letterButton.style.backgroundColor = "grey";
+          if (wordToGuess.includes(letter) == true) {
+            const lines = document.getElementsByClassName("line");
+            nga++;
+            console.log(nga);
+            gameStatus(nga);
+            const index = wordToGuess.indexOf(letter);
+
+            lines[index].innerHTML = letter;
+          } else {
+            Lives--;
+            livesDisplay.textContent = `Lives: ${Lives}`;
+          }
+          letterButton.disabled = true;
+        });
+      }
+
+      let trick = [];
+      for (let i = 0; i < wordToGuess.length; i++) {
+        trick.push("_");
+      }
+      function HardDisplay() {
+        wordDisplay.innerHTML = "";
+        for (let i = 0; i < trick.length; i++) {
+          const trickElement = document.createElement("div");
+          trickElement.innerHTML = trick[i];
+          trickElement.className = "line";
+          wordDisplay.appendChild(trickElement);
+        }
+      }
+      function gameStatus(nga) {
+        if (nga == wordToGuess.length) {
+          alert("Luck");
+        } else if (Lives === 0) {
+          alert("You suck go delete yourself, bro", +wordToGuess);
+        }
+      }
+      gameStatus();
+      HardDisplay();
+    </script>
+  </body>
+</html>

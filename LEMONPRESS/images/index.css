@@ -106,7 +106,7 @@
 }
 
 .Zurag {
-  width: 30vw;
+  width: 27vw;
   display: flex;
   height: 480px;
   position: relative;
@@ -114,7 +114,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-top: 9vh;
   margin-left: 18vh;
 }
@@ -999,6 +999,20 @@
   margin-top: 98px;
   height: 300px;
   background-color: #0040d4;
+  color: white;
+}
+
+.Phone {
+  width: 250px;
+  margin-left: 420px;
+  margin-top: 25px;
+  color: wheat;
+}
+.Press-word {
+  width: 350px;
+  font-size: 18px;
+  margin-left: 420px;
+  margin-top: 10px;
 }
 
 .Foot-Plate {
@@ -1010,8 +1024,142 @@
 .circle {
   border-radius: 50%;
   background-color: white;
-  color: green;
+  color: Black;
   width: 58px;
   height: 56px;
   display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.facebook {
+  border-radius: 50%;
+  background-color: lightblue;
+  color: Black;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.twitter {
+  border-radius: 50%;
+  background-color: lightskyblue;
+  color: Black;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.twitter:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.youtube {
+  border-radius: 50%;
+  background-color: lightcoral;
+  color: Black;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.instagram {
+  border-radius: 50%;
+  background-color: lightpink;
+  color: Black;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram:hover {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.linkedin {
+  border-radius: 50%;
+  background-color: lightgreen;
+  color: Black;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.footer-lemonpress {
+  margin-left: 420px;
+  display: flex;
+}
+
+.footer-lemonpress:hover {
+  cursor: pointer;
+}
+
+.Tovhimol2 {
+  color: white;
+  margin-left: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.Clicks {
+  color: grey;
+}
+
+.Clicks:hover {
+  cursor: pointer;
+}
+
+.Holder {
+  margin-top: 20px;
 }

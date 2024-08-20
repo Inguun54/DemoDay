@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input placeholder="Email" id="email" type="email"></input>
+    <input placeholder="Phone" id="phoneNumber" ></input>
+    <input placeholder="Pass"  id="password" type="password" minlength="8"></input>
+    <button id="Button">Submit</button>
+    <div class="asd">Welcome to Red Web</div>
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .asd {
+        border: 12px solid red;
+        width: 500px;
+        height: 280px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        color: whitesmoke;
+        font-size: 20px;
+      }
+      #password {
+        position: relative;
+        top:100px
+      }
+      #email {
+        margin-left: 10px;
+        position: relative;
+        top: 100px;
+      }
+      #phoneNumber{
+        position: relative;
+        top: 100px;
+      }
+      #Button {
+        position: relative;
+        top: 100px;
+      }
+    </style>
+    <script>
+        const Letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+        const numbers = "0123456789" 
+      const Email = document.getElementById("email");
+      const phoneNumber = document.getElementById("phoneNumber");
+      const Password = document.getElementById("password");
+      const button = document.getElementById("Button");
+      // function validEmail() {
+      //   const emailIs = email.value;
+      //   if (emailIs.includes("@") === false) {
+      //     alert("on email @ has to include ");
+      //   }
+      // }
+
+      // function validPhone(){
+      //   let phoneIs = phoneNumber.value;
+
+      //   for(let i = 0; i < phoneIs.length; i++){
+      //       if(numbers.includes(phoneIs[i]) == false) {
+      //           return alert("Only number on (Phone)")
+      //       }
+      //   }
+      // }
+
+
+      function validPassWord() {
+        let passwordIs = password.value;
+        for(let i = 0; i <passwordIs.length; i++) 
+        if(passwordIs.length < 8) {
+       return alert("must contain 8 character minimum")
+      } else if(Letters.includes(passwordIs[i]) == false){
+        return alert("The password must contain letters")
+       }
+      }
+
+      Button.addEventListener("click", function (){
+        validEmail();
+       validPhone();
+       validPassWord()
+            });
+      
+    </script>
+  </body>
+</html>

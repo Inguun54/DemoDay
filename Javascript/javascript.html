@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let a = Number(prompt("Ehnii talaa oruulna uu."));
+      // let b = Number(prompt("Hoyordoh talaa oruulna uu."));
+      // let c = Number(prompt("Guravdah talaa oruulna uu."));
+      // let p = a + b + c;
+      // !alert(p);
+
+      // let Ce = Number(prompt("Celsius"));
+      // let Fa = Ce * 1.8 + 32;
+      // !alert(Fa);
+
+      // let Cm = Number(prompt("Cm oruulna uu."));
+      // let Inch = Cm * 2.54;
+      // !alert(Inch);
+
+      // let name = "Inguun";
+      // let age = 15;
+
+      // console.log("Hello I am " + name + ".");
+      // console.log("I am '" + age + "' years old.");
+
+      // let value1 = prompt("Enter the ehnii ug:");
+      // let value2 = prompt("Enter the hoyordoh ug:");
+
+      // let length1 = value1.length;
+      // let length2 = value2.length;
+
+      // if (length1 > length2) {
+      //   !alert(
+      //     `Ehnii ugiin usgiin too ih bn. Ehnii usgiin ugiin too: ${length1}, Hoyordoh usgiin ugiin too: ${length2}`
+      //   );
+      // } else if (length1 < length2) {
+      //   !alert(
+      //     `Hoyordoh ugiin usgiin too ih bn. Ehnii usgiin ugiin too: ${length1}, Hoyordoh usgiin ugiin too: ${length2}`
+      //   );
+      // } else {
+      //   !alert(
+      //     `Hoyor ug hoyulaa adilhan bn. hoyor ugiin usegnii too: ${length1}`
+      //   );
+      // }
+
+      // const amount1 = 3000;
+      // const amount2 = 27500;
+      // const amount3 = 100000;
+
+      // let feePercentage1 = 20; // 20% tatvar
+      // let fee1 = (amount1 * feePercentage1) / 100;
+      // let totalAmount1 = amount1 + fee1;
+      // alert(
+      //   "For " +
+      //     amount1 +
+      //     "₮, toloh dun " +
+      //     (totalAmount1 - (totalAmount1 % 1)) +
+      //     "₮"
+      // );
+
+      // let feePercentage2 = 15; // 15% tatvar
+      // let fee2 = (amount2 * feePercentage2) / 100;
+      // let totalAmount2 = amount2 + fee2;
+      // alert(
+      //   "For " +
+      //     amount2 +
+      //     "₮, toloh dun " +
+      //     (totalAmount2 - (totalAmount2 % 1)) +
+      //     "₮"
+      // );
+
+      // let feePercentage3 = 45; // 45% tatvar
+      // let fee3 = (amount3 * feePercentage3) / 100;
+      // let totalAmount3 = amount3 + fee3;
+      // alert(
+      //   "For " +
+      //     amount3 +
+      //     "₮, toloh dun " +
+      //     (totalAmount3 - (totalAmount3 % 1)) +
+      //     "₮"
+      // );
+
+      // const N = 5;
+
+      // let shatar = "";
+
+      // for (let i = 0; i < N; i++) {
+      //   for (let j = 0; j < N; j++) {
+      //     if ((i + j) % 2 === 0) {
+      //       shatar += "_";
+      //     } else {
+      //       shatar += "#";
+      //     }
+      //   }
+      //   shatar += "\n";
+      // }
+
+      // console.log(shatar);
+      // const BRO = 5;
+
+      // for (let i = 1; i <= BRO; i++) {
+      //   let BRUH = "";
+
+      //   for (let j = 1; j <= BRO - i; j++) {
+      //     BRUH += " ";
+      //   }
+
+      //   for (let k = 1; k <= 2 * i - 1; k++) {
+      //     BRUH += "*";
+      //   }
+      //   console.log(BRUH);
+      // }
+
+      // let x = 1;
+      // z = 1;
+      // y = 1;
+      // for (let i = 3; i <= 20; i++) {
+      //   x = (x + z) % 5;
+      //   z = y;
+      //   y = z;
+      // }
+
+      // console.log("20 doh gishuuni 5 huvaagdad uldsen too bol:");
+
+      // let studentage = [10, 20, 15, 19, 18, 19, 19];
+      // let i = 0;
+      // let sum = 0;
+      // for (let i = 0; i < studentage.length; i++) {
+      //   sum += studentage[i];
+      // }
+      // let average = sum / studentage.length;
+      // console.log(average);
+
+      // let userBalance = [1000, 2000, 2500, 40000000, 13054, 323425];
+      // for (let i = 0; i < userBalance.length; i++) {
+      //   let originalbalance = userBalance[i];
+      //   let increasedbalance = originalbalance * 1.15;
+      //   console.log(`${increasedbalance}`);
+      // }
+      // let companyNames = [
+      //   "Facebook",
+      //   "Google",
+      //   "Microsoft",
+      //   "Apple",
+      //   "IBM",
+      //   "Oracle",
+      //   "Amazon",
+      // ];
+      // for (let i = 0; i < companyNames.length; i++) {}
+
+      // let lowercaseCompanyNames = [];
+
+      // for (let i = 0; i < companyNames.length; i++) {
+      //   lowercaseCompanyNames[i] = companyNames[i].toLowerCase();
+      // }
+
+      // console.log(lowercaseCompanyNames);
+
+      // for (let i = 0; i < companyNames.length; i++) {
+      //   console.log(companyNames[i].toUpperCase());
+      // }
+
+      // let itCompanies = [
+      //   "Facebook",
+      //   "Google",
+      //   "Microsoft",
+      //   "Apple",
+      //   "IBM",
+      //   "Oracle",
+      //   "Amazon",
+      // ];
+      // itCompanies.splice(0, 3);
+      // console.log(itCompanies);
+      // itCompanies.splice(4, 3);
+      // console.log(itCompanies);
+      // itCompanies.pop();
+      // console.log(itCompanies);
+      // itCompanies.shift();
+      // console.log(itCompanies);
+
+      // let data = [
+      //   "Засгийн",
+      //   "газарт",
+      //   "6.4",
+      //   "сая",
+      //   "тонн",
+      //   "Нүүрс",
+      //   "алдагдсан",
+      //   "гэх",
+      //   "мэдээлэл",
+      //   "ирээгүй",
+      //   "байна.",
+      //   "Бодит",
+      //   "байдалд",
+      //   "ийм",
+      //   "их",
+      //   "хэмжээний",
+      //   "нүүрс",
+      //   "алдагдсан",
+      //   "гэх",
+      //   "асуудал",
+      //   "эргэлзээтэй",
+      //   "байна.",
+      //   "Хууль",
+      //   "хяналтын",
+      //   "байгууллага",
+      //   "хяналт",
+      //   "шалгалтын",
+      //   "ажил",
+      //   "явуулж",
+      //   "байна",
+      // ];
+
+      // let GoSleep = prompt("Input");
+
+      // const Word = GoSleep.toLowerCase();
+
+      // let too = 0;
+
+      // for (let i = 0; i < data.length; i++) {
+      //   if (data[i].toLowerCase() === Word) {
+      //     too++;
+      //   }
+      // }
+
+      // alert(`Oruulsan'${GoSleep}' ug ${too} udaa orson bn.`);
+
+      // let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+
+      // let maxNumber = arrayOfNumbers[0];
+      // for (let i = 1; i < arrayOfNumbers.length; i++) {
+      //   if (arrayOfNumbers[i] > maxNumber) {
+      //     maxNumber = arrayOfNumbers[i];
+      //   }
+      // }
+      // console.log("Hamgiin ih too: " + maxNumber);
+
+      // let arrayOfNumber = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+
+      // let minNumber = arrayOfNumber[0];
+      // for (let i = 1; i < arrayOfNumber.length; i++) {
+      //   if (arrayOfNumber[i] < minNumber) {
+      //     minNumber = arrayOfNumber[i];
+      //   }
+      // }
+      // console.log("Hamgiin baga too: " + minNumber);
+
+      // let ArrayOfNumber = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+      // console.log(ArrayOfNumber.unshift(64));
+      // console.log(ArrayOfNumber);
+      // let ArrayofNumber = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+      // console.log(ArrayofNumber.push(32));
+      // console.log(ArrayofNumber);
+
+      // let arr1 = [3, 45, 23, 78, 34, 1];
+      // let arr2 = [4, 2, 34, 4, 12, 1];
+
+      // let medku1 = arr1.length;
+      // let medku2 = arr2.length;
+      // let MiniLength = medku1 < medku2 ? medku1 : medku2;
+
+      // let urdun = [];
+      // for (let i = 0; i < MiniLength; i++) {
+      //   urdun.push(arr1[i] * arr2[i]);
+      // }
+      // console.log(urdun);
+
+      // let arrayvalues = [5, 6, 4, 12, 19, 121, 1, 7, 9, 63];
+
+      // let evenCount = 0;
+      // let oddCount = 0;
+
+      // for (let i = 0; i < arrayvalues.length; i++) {
+      //   if (arrayvalues[i] % 2 === 0) {
+      //     evenCount++;
+      //   } else {
+      //     oddCount++;
+      //   }
+      // }
+      // console.log("Even numbers count:", evenCount);
+      // console.log("Odd numbers count:", oddCount);
+
+      // let orolt = [4, 2, 34, 4, 1, 12, 1, 4];
+      // let Hariu = [];
+
+      // for (let i = 0; i < orolt.length; i++) {
+      //   if (orolt.indexOf(orolt[i]) !== i && Hariu.indexOf(orolt[i]) === -1) {
+      //     Hariu.push(orolt[i]);
+      //   }
+      // }
+      // console.log(Hariu);
+
+      // const numFloors = 5;
+      // const doorsPerFloor = 3;
+      // const doorNumber = 8;
+
+      // const floorNumber = ((doorNumber - 1) / doorsPerFloor) | (0 + 1);
+
+      // const positionOnFloor = ((doorNumber - 1) % doorsPerFloor) + 1;
+
+      // console.log(floorNumber, positionOnFloor);
+
+      // function greet() {
+      //   console.log("Hello");
+      // }
+      // greet("Hello");
+
+      // function wsg(inGuun) {
+      //   console.log("Hello" + inGuun + "  :)))))");
+      // }
+      // let input = prompt("Enter yo name");
+      // wsg(input);
+
+      // function square(num) {
+      //   return num * num;
+      // }
+      // const result = square(4);
+      // function FullName() {
+      //   return "Uurtsaikh inguun";
+      // }
+      // const fullName = FullName();
+      // console.log(fullName);
+
+      // function getFullName(firstName, lastName) {
+      //   return firstName + " " + lastName;
+      // }
+      // const Name = getFullName("Uurtsaikhiin,", "Inguun");
+      // console.log(Name);
+
+      // function Toonuud(a, b) {
+      //   return a + b;
+      // }
+      // let result = Toonuud(2, 9);
+      // console.log(result);
+
+      // function Tegshee(arkhi, amidral) {
+      //   let MedkuNumbers = [];
+      //   if (arkhi > amidral) {
+      //     let Yellow = arkhi;
+      //     arkhi = amidral;
+      //     amidral = Yellow;
+      //   }
+      //   if (arkhi % 2 !== 0) {
+      //     arkhi++;
+      //   }
+      //   for (let i = arkhi; i < amidral; i += 2) MedkuNumbers.push(i);
+      //   return MedkuNumbers;
+      // }
+      // console.log(Tegshee(1, 14));
+
+      // function Odd(Edward, Junior) {
+      //   let MeddegNumbers = [];
+
+      //   if (Edward > Junior) {
+      //     [Edward, Junior] = [Junior, Edward];
+      //   }
+      //   if (Edward % 2 === 0) {
+      //     Edward++;
+      //   }
+      //   for (let i = Edward; i <= Junior; i += 2) {
+      //     MeddegNumbers.push(i);
+      //   }
+      //   return MeddegNumbers;
+      // }
+      // console.log(Odd(1, 12));
+
+      // const arr = [12, 23, 32, 14, 65, 34, 11, 15];
+      // let input = prompt("Number input");
+      // let num = Number(input);
+
+      // function findIndex(arr, num) {
+      //   for (let i = 0; i < arr.length; i++) {
+      //     if (arr[i] === num) {
+      //       return i;
+      //     }
+      //   }
+      //   return -1;
+      // }
+      // let index = findIndex(arr, num);
+      // console.log("Index:", index);
+
+      // function TomBolgoh(str) {
+      //   return str.toUpperCase();
+      // }
+
+      // const exampleString = "Jagat on top of the world";
+      // const uppercaseString = TomBolgoh(exampleString);
+      // console.log(uppercaseString);
+
+      // function JijkenBolgoh(str) {
+      //   return str.toLowerCase();
+      // }
+      // const Example2 = "Jagat on top of the world";
+      // const uppercase = JijkenBolgoh(Example2);
+      // console.log(uppercase);
+
+      // const opps = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20];
+
+      // function Eatway(arr) {
+      //   return arr.sort((a, b) => a - b);
+      // }
+      // console.log(Eatway(opps));
+
+      // const nambers = [3, 1, 7, 5, 2, 6, 69, 12];
+
+      // let ClosestToZero = nambers[0];
+
+      // for (let i = 1; i < nambers.length; i++) {
+      //   if (nambers[i] === 0) {
+      //     ClosestToZero = 0;
+      //     break;
+      //   }
+
+      //   if (
+      //     (nambers[i] > 0 && ClosestToZero > 0 && nambers[i] < ClosestToZero) ||
+      //     (nambers[i] < 0 && ClosestToZero < 0 && nambers[i] > ClosestToZero) ||
+      //     (nambers[i] > 0 && ClosestToZero < 0) ||
+      //     (nambers[i] < 0 && ClosestToZero > 0)
+      //   ) {
+      //     closest = nambers[i];
+      //   }
+      // }
+
+      // console.log(closest);
+    </script>
+  </body>
+</html>
